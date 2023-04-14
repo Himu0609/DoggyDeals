@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/DoggyDeals/static/css/main.073c9b0a.css",
-    "main.js": "/DoggyDeals/static/js/main.0750d894.js",
+    "main.js": "/DoggyDeals/static/js/main.fd027c82.js",
     "static/media/Dog.svg": "/DoggyDeals/static/media/Dog.1116a4bb3f8d05879f94c6db31f1e6be.svg",
     "index.html": "/DoggyDeals/index.html",
     "main.073c9b0a.css.map": "/DoggyDeals/static/css/main.073c9b0a.css.map",
-    "main.0750d894.js.map": "/DoggyDeals/static/js/main.0750d894.js.map"
+    "main.fd027c82.js.map": "/DoggyDeals/static/js/main.fd027c82.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.0750d894.js"
+    "static/js/main.fd027c82.js"
   ]
 }
