@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import icon from "../Assets/Dog.svg";
 function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar navbar-dark bg-primary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <a className="navbar-brand" href="#">
             <img src={icon} alt="" style={{ width: "35px" }} />
             Doggy Deals
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,15 +23,11 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
-                </Link>
+                </a>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="about">
-                  About
-                </Link>
-              </li>
+ 
             </ul>
           </div>
         </div>
