@@ -1,0 +1,45 @@
+import React from "react";
+
+
+function Cart(props) {
+const {item,setItem}=props;
+
+  const handleRemove =(id) => {
+    const newList = item.filter((item) => item.message !== id);
+   setItem(newList);
+  }
+ 
+  return (
+    <div>
+      <div
+        className="card text-black bg-light mb-3"
+        // style={{ maxWidth: "18rem" }}
+      >
+        <div className="card-header bg-warning text-white h2">Your Cart</div>
+        <div className="card-body">
+          <h5 className="card-title">Summary</h5>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+              Per Dog
+              <span>$100</span>
+            </li>
+            {item.map((value, index) => {return    <li key={value.message} className="list-group-item d-flex justify-content-between align-items-center px-0">
+            <img src={value.message} alt="" style={{ width: "50px" }} />
+            <button className="btn-primary" onClick={() => handleRemove(value.message)} >-</button>
+            </li>}) }
+            <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+              <div>
+                <strong>Total amount</strong>
+              </div>
+              <span>
+                <strong>{item.length * 100}$</strong>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Cart;
