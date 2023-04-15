@@ -6,7 +6,6 @@ function Cart(props) {
   const handleRemove = (id) => {
     const newList = item.filter((item) => item.message !== id);
     setItem(newList);
-    console.log(item.length, newList.length, "up");
 
     if (newList.length === 0 && item.length - 1 === 0) {
       setisDisabled(false);
@@ -18,7 +17,6 @@ function Cart(props) {
     }
   };
  const onClearAll = () => { 
-  console.log("clicked")
   setItem([]);
   setisDisabled(false);
   setMessage("Add To Cart");
@@ -27,7 +25,6 @@ function Cart(props) {
     <div>
       <div
         className="card text-black bg-light mb-3"
-        // style={{ maxWidth: "18rem" }}
       >
         <div className="card-header bg-warning text-white h2">Your Cart</div>
         <div className="card-body">
