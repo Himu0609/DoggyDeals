@@ -78,7 +78,7 @@ function Home() {
           )}
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4">
-          <Cart addToCart={addToCart} dog={dog} item={item} setItem={setItem} />
+          <Cart addToCart={addToCart} dog={dog} item={item} setItem={setItem} setisDisabled={setisDisabled} setMessage={setMessage} />
         </div>
       </div>
     </div>
